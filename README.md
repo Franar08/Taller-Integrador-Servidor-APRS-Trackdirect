@@ -4,5 +4,4 @@ Repositorio para el Proyecto correspondiente al curso de Taller Integrador con t
 
 Gantt inicial del proyecto
 
-!\[Gantt](gantt/Gantt.png)
-
+![Gantt](gantt/Gantt.png)
