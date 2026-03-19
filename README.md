@@ -9,7 +9,11 @@ Gantt inicial del proyecto
 
 # Instalar VirtualBox y crear una máquina virtual con Ubuntu Server LTS.
 
-
+Se creó correctamente una máquina virtual en VirtualBox con **Ubuntu Server LTS**.
+**Validación realizada:**
+- Verificación del arranque del sistema operativo
+- Inicio de sesión exitoso en Ubuntu Server
+- Confirmación de versión del sistema
 # Instalar Webmin para la administración gráfica del servidor.
 
 
