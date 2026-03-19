@@ -18,6 +18,28 @@ Se creó correctamente una máquina virtual en VirtualBox con **Ubuntu Server LT
 sudo apt update
 sudo apt install -y build-essential dkms linux-headers-$(uname -r)
 ```
+```bash
+cd ~/Downloads
+sudo apt install ./virtualbox-*.deb
+```
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo reboot
+```
+```bash
+curl -o webmin-setup-repo.sh https://raw.githubusercontent.com/webmin/webmin/master/webmin-setup-repo.sh
+sudo sh webmin-setup-repo.sh
+```
+```bash
+sudo apt-get install webmin --install-recommends
+```
+```bash
+sudo systemctl status webmin --no-pager
+```
+```bash
+sudo ss -tulpn | grep 10000
+```
 # Instalar Webmin para la administración gráfica del servidor.
 
 
