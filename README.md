@@ -137,4 +137,8 @@ HTTPStatus 0.0.0.0 14501
 
 Una vez configurado el servidor, se procedió a validar su funcionamiento mediante la ejecución del servicio y la verificación de su estado:
 
-![Estado APRSC](./Avance%202%20-%20Setup%20inicial/Imágenes/active.png)
+![Estado APRSC](./img/active.png)
+
+Para complementar la administración del sistema, se utilizó Webmin como interfaz gráfica, lo que permitió supervisar el estado del servidor, los recursos del sistema y los servicios activos de forma remota.
+
+![Dash](./img/dashborard.png)
