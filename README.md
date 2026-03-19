@@ -111,4 +111,27 @@ En conclusión, debido a las restricciones de seguridad en versiones modernas de
 
 ![VM](Avance 2 - Setup inicial/Imágenes/Webmin.png)
 
-# Instalar y configurar el servicio aprsc y configurar aprsc para recibir el tráfico del iGate de prueba (TI3WTI-10).
+# Instalar y configurar el servicio aprsc y configurar aprsc para recibir el tráfico del iGate de prueba (TI3WTI-10)
+
+Para la implementación del backend del sistema se utilizó APRSC (APRS Server Core), el cual permite la recepción, procesamiento y distribución de paquetes APRS dentro de la red. Este servicio es fundamental para el funcionamiento del sistema, ya que actúa como el núcleo de comunicación entre los clientes e iGates.
+
+Inicialmente, se procedió con la instalación del servidor APRSC en el entorno Ubuntu Server. Durante este proceso, fue necesario resolver dependencias del sistema para garantizar una instalación correcta del servicio. Una vez completada la instalación, se verificó la disponibilidad del ejecutable y los archivos de configuración asociados.
+
+Posteriormente, se realizó la configuración del servidor mediante la edición del archivo `aprsc.conf`, en el cual se definieron los parámetros principales de operación del sistema. Entre los aspectos más relevantes configurados se encuentran:
+
+- Identificación única del servidor mediante el parámetro `ServerId`
+- Información del administrador (`MyAdmin`) y correo de contacto (`MyEmail`)
+- Configuración de puertos para clientes APRS (14580)
+- Habilitación del servicio de monitoreo HTTP (14501)
+- Definición de listeners para la recepción de tráfico en diferentes modos (fullfeed, igate, udpsubmit)
+
+Ejemplo de configuración utilizada:
+
+ServerId   TI3WTI-10
+MyAdmin    "Kendall Madrigal, TI3WTI-10"
+MyEmail    kendallmacampos2941@estudiantec.cr
+
+Listen "Client-Defined Filters" igate tcp :: 14580
+HTTPStatus 0.0.0.0 14501
+
+
