@@ -10,10 +10,7 @@ Gantt inicial del proyecto
 # Instalar VirtualBox y crear una máquina virtual con Ubuntu Server LTS.
 
 Se creó correctamente una máquina virtual en VirtualBox con **Ubuntu Server LTS**.
-**Validación realizada:**
-- Verificación del arranque del sistema operativo
-- Inicio de sesión exitoso en Ubuntu Server
-- Confirmación de versión del sistema
+Iniciando con la descarga del Ubuntu server desde la página oficial de ubuntu para la configuración dentro del VirtualBox, también se descargó el VirtualBox
 Primero se instalaron dependencias necesarias:
 ```bash
 sudo apt update
@@ -30,6 +27,23 @@ sudo apt update
 sudo apt upgrade -y
 sudo reboot
 ```
+**Dentro del VirtualBox**
+- Pulsa **New**
+- En name se escribe **Ubuntu Server**
+- En ISO se selecciona la imagen que descargamos anteriormente de Ubuntu Server
+- Luego en **Type** Linux y **Versión** Ubuntu (64 bit)
+- Desmarca la opción de instalación automática, que suele salir como:
+Proceed with Unattended Installation
+
+**Asignación de recursos de la VirtualBox**
+- Ram de 2048MB, CPU 2 y un disco de 20GB
+- Se deja EFI desmarcado si no te lo piden específicamente.
+
+**Luego se inicia la máquina virtual**
+- Se selecciona el idioma
+- Se selecciona el idioma del teclado
+- Install Ubuntu Server
+****
 
 # Instalar Webmin para la administración gráfica del servidor.
 
