@@ -4,7 +4,7 @@ Repositorio para el Proyecto correspondiente al curso de Taller Integrador con t
 
 Gantt inicial del proyecto
 
-![Gantt](Avance 1 - Documentación/gantt/Gantt.png)
+![Gantt](img/Gantt.png)
 
 
 # Instalar VirtualBox y crear una máquina virtual con Ubuntu Server LTS.
@@ -57,7 +57,7 @@ Al finalizar, la máquina virtual quedó disponible en el panel principal de Vir
 
 Como resultado, se logró clonar exitosamente la máquina virtual, asegurando que todos los miembros del equipo trabajaran sobre un entorno consistente y funcional.
 
-![VM](Avance 2 - Setup inicial/Imágenes/VM.png)
+![VM](img/VM.png)
 
 # Instalar Webmin para la administración gráfica del servidor.
 
@@ -109,7 +109,7 @@ Finalmente, se inició sesión utilizando las credenciales del sistema operativo
 
 En conclusión, debido a las restricciones de seguridad en versiones modernas de Ubuntu, la instalación de Webmin se realizó mediante el uso del paquete `.deb`, lo que permitió evitar problemas de firma y completar la configuración de forma exitosa. Esta herramienta quedó operativa para la gestión remota del servidor, cumpliendo con los requerimientos del proyecto.
 
-![VM](Avance 2 - Setup inicial/Imágenes/Webmin.png)
+![VM](img/Webmin.png)
 
 # Instalar y configurar el servicio aprsc y configurar aprsc para recibir el tráfico del iGate de prueba (TI3WTI-10)
 
