@@ -30,23 +30,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo reboot
 ```
-Se descargó y configuró el repositorio oficial de Webmin:
-```bash
-curl -o webmin-setup-repo.sh https://raw.githubusercontent.com/webmin/webmin/master/webmin-setup-repo.sh
-sudo sh webmin-setup-repo.sh
-```
-Luego se instaló Webmin:
-```bash
-sudo apt-get install webmin --install-recommends
-```
-Verificación del servicio:
-```bash
-sudo systemctl status webmin --no-pager
-```
-Comprobación del puerto de escucha:
-```bash
-sudo ss -tulpn | grep 10000
-```
+
 # Instalar Webmin para la administración gráfica del servidor.
 
 
