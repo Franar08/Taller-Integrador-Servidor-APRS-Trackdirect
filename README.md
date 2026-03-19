@@ -135,3 +135,6 @@ Listen "Client-Defined Filters" igate tcp :: 14580
 HTTPStatus 0.0.0.0 14501
 
 
+Una vez configurado el servidor, se procedió a validar su funcionamiento mediante la ejecución del servicio y la verificación de su estado:
+
+![Estado APRSC](./Avance%202%20-%20Setup%20inicial/Imágenes/active.png)
