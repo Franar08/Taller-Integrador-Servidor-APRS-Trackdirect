@@ -43,8 +43,18 @@ Proceed with Unattended Installation
 - Se selecciona el idioma
 - Se selecciona el idioma del teclado
 - Install Ubuntu Server
+- Proxy vacío
+- SE configura el disco y se selecciona **Use an entire Disk**
+**Creación del usuario del sistema**
+- Tu nombre: Pooh
+- Nombre del servidor: ubuntu-server
+- Nombre de usuario: pooh
+- Contraseña: 
+- Confirmar contraseña:
 ****
-
+**Se chequea que en devices-optical drives-remove disk from virtual drive**
+Por último se inicia la el entorno y se inicia sesión con los credenciales antes configurados quedando un resultado como el de la imagen:
+![VMK](img/VMK.png)
 ## Clonación de Maquina Virtual
 
 Para replicar el entorno de trabajo entre los integrantes del equipo, se utilizó un archivo en formato .ova, el cual ya contenía la máquina virtual completamente configurada. Este formato permitió evitar la instalación manual del sistema operativo y redujo considerablemente el tiempo de preparación del entorno.
@@ -138,7 +148,3 @@ HTTPStatus 0.0.0.0 14501
 Una vez configurado el servidor, se procedió a validar su funcionamiento mediante la ejecución del servicio y la verificación de su estado:
 
 ![Estado APRSC](./img/active.png)
-
-Para complementar la administración del sistema, se utilizó Webmin como interfaz gráfica, lo que permitió supervisar el estado del servidor, los recursos del sistema y los servicios activos de forma remota.
-
-![Dash](./img/dashborard.png)
