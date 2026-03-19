@@ -14,6 +14,11 @@ Se creó correctamente una máquina virtual en VirtualBox con **Ubuntu Server LT
 - Verificación del arranque del sistema operativo
 - Inicio de sesión exitoso en Ubuntu Server
 - Confirmación de versión del sistema
+- **Comandos de evidencia:**
+```bash
+cat /etc/os-release
+hostnamectl
+
 # Instalar Webmin para la administración gráfica del servidor.
 
 
