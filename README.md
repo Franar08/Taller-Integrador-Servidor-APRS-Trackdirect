@@ -14,7 +14,10 @@ Se creó correctamente una máquina virtual en VirtualBox con **Ubuntu Server LT
 - Verificación del arranque del sistema operativo
 - Inicio de sesión exitoso en Ubuntu Server
 - Confirmación de versión del sistema
-
+```bash
+sudo apt update
+sudo apt install -y build-essential dkms linux-headers-$(uname -r)
+```
 # Instalar Webmin para la administración gráfica del servidor.
 
 
