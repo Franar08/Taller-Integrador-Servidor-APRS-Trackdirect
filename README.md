@@ -137,8 +137,8 @@ Posteriormente, se realizó la configuración del servidor mediante la edición 
 
 Ejemplo de configuración utilizada:
 
-ServerId   TI3WTI-10
-MyAdmin    "Kendall Madrigal, TI3WTI-10"
+ServerId   TI3AFK
+MyAdmin    "EquipoA, TI3AFK"
 MyEmail    kendallmacampos2941@estudiantec.cr
 
 Listen "Client-Defined Filters" igate tcp :: 14580
@@ -147,4 +147,4 @@ HTTPStatus 0.0.0.0 14501
 
 Una vez configurado el servidor, se procedió a validar su funcionamiento mediante la ejecución del servicio y la verificación de su estado:
 
-![Estado APRSC](./img/active.png)
+![Estado APRSC](./img/recibiendo.jpeg)
