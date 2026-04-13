@@ -72,7 +72,7 @@ services:
       context: .
       dockerfile: trackdirect-reverseproxy.dockerfile
     ports:
-      - "80:80"
+      - "8081:80"
     depends_on:
       - "web"
       - "websocket"
