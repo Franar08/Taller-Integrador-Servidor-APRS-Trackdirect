@@ -148,3 +148,114 @@ HTTPStatus 0.0.0.0 14501
 Una vez configurado el servidor, se procedió a validar su funcionamiento mediante la ejecución del servicio y la verificación de su estado:
 
 ![Estado APRSC](./img/recibiendo.jpeg)
+
+## Ejecución del sistema con Docker Compose
+
+Dentro del directorio principal del proyecto se ejecutó:
+
+```bash
+sudo docker compose up -d
+```
+
+Este comando permitió levantar los siguientes servicios:
+
+- **aprsc** (Servidor APRS)  
+- **collector** (Procesamiento de paquetes)  
+- **db** (Base de datos PostgreSQL)  
+- **web** (Interfaz web Trackdirect)  
+- **reverseproxy** (Servidor Nginx)  
+- **websocket** (Comunicación en tiempo real)  
+
+Para verificar el estado de los contenedores:
+
+```bash
+sudo docker compose ps
+```
+
+****imagen: contenedores en estado "Up"
+
+---
+
+## Configuración de red en VirtualBox
+
+Para permitir el acceso a los servicios desde la máquina host, se configuró el modo **NAT con redirección de puertos (Port Forwarding)**.
+
+Se definieron las siguientes reglas:
+
+- **Puerto 8081 → Trackdirect**  
+- **Puerto 10000 → Webmin**  
+
+Esto permite acceder a los servicios mediante:
+
+- http://127.0.0.1:8081  
+- https://127.0.0.1:10000  
+
+imagen:****Configuración de Port Forwarding en VirtualBox
+
+---
+
+## Verificación del servicio web
+
+Para comprobar que el servicio web se encuentra activo, se utilizó el siguiente comando:
+
+```bash
+curl -I http://127.0.0.1:8081
+```
+
+Obteniendo como resultado:
+
+```text
+HTTP/1.1 200 OK
+```
+*****imagen: Resultado del comando curl
+
+---
+
+## Integración de APRSC con Trackdirect
+
+Una vez levantados los servicios, el contenedor **collector** se encarga de conectarse al servidor **APRSC** local para recibir los paquetes APRS.
+
+Estos datos siguen el siguiente flujo:
+
+1. Recibidos por APRSC  
+2. Procesados por el collector  
+3. Almacenados en PostgreSQL  
+4. Consultados por Trackdirect  
+
+Esto permite la visualización en tiempo real de estaciones APRS en el mapa.
+
+---
+
+## Validación del sistema con tracker de prueba
+
+Para validar el funcionamiento del sistema, se utilizó el tracker:
+
+**TI0TEC1-7**
+
+El cual fue visualizado correctamente en la interfaz de Trackdirect.
+
+Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, confirmando la correcta recepción y procesamiento de datos.
+
+****Mapa mostrando TI0TEC1-7
+
+---
+
+## Arquitectura del sistema
+
+El flujo completo del sistema se resume de la siguiente manera:
+
+```text
+[ Tracker APRS (TI0TEC1-7) ]
+            ↓
+     [ Red APRS (Internet) ]
+            ↓
+         [ APRSC ]
+            ↓
+       [ Collector ]
+            ↓
+       [ PostgreSQL ]
+            ↓
+      [ Trackdirect Web ]
+            ↓
+        [ Navegador ]
+```
