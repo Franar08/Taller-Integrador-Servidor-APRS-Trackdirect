@@ -235,8 +235,7 @@ Para validar el funcionamiento del sistema, se utilizó el tracker:
 El cual fue visualizado correctamente en la interfaz de Trackdirect.
 
 Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, confirmando la correcta recepción y procesamiento de datos.
-
-****Mapa mostrando TI0TEC1-7
+![mapa1](./img/mapa1.png)
 
 ---
 
