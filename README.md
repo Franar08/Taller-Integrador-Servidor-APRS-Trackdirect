@@ -243,3 +243,7 @@ Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, co
 
 El flujo completo del sistema se resume de la siguiente manera:
 
+
+![diag68](./img/dig68.png)
+
+---
