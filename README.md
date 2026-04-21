@@ -243,18 +243,3 @@ Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, co
 
 El flujo completo del sistema se resume de la siguiente manera:
 
-```text
-[ Tracker APRS (TI0TEC1-7) ]
-            ↓
-     [ Red APRS (Internet) ]
-            ↓
-         [ APRSC ]
-            ↓
-       [ Collector ]
-            ↓
-       [ PostgreSQL ]
-            ↓
-      [ Trackdirect Web ]
-            ↓
-        [ Navegador ]
-```
