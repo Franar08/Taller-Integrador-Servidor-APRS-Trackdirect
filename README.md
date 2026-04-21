@@ -172,7 +172,7 @@ Para verificar el estado de los contenedores:
 sudo docker compose ps
 ```
 
-****imagen: contenedores en estado "Up"
+![containers_up](./img/containers_up.png)
 
 ---
 
@@ -190,7 +190,7 @@ Esto permite acceder a los servicios mediante:
 - http://127.0.0.1:8081  
 - https://127.0.0.1:10000  
 
-imagen:****Configuración de Port Forwarding en VirtualBox
+![config_forwarding](./img/config_f.png)
 
 ---
 
@@ -207,7 +207,7 @@ Obteniendo como resultado:
 ```text
 HTTP/1.1 200 OK
 ```
-*****imagen: Resultado del comando curl
+![curl](./img/resultado-curl.png)
 
 ---
 
