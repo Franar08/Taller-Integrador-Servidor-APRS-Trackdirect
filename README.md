@@ -172,7 +172,7 @@ Para verificar el estado de los contenedores:
 sudo docker compose ps
 ```
 
-****imagen: contenedores en estado "Up"
+![containers_up](./img/containers_up.png)
 
 ---
 
@@ -190,7 +190,7 @@ Esto permite acceder a los servicios mediante:
 - http://127.0.0.1:8081  
 - https://127.0.0.1:10000  
 
-imagen:****Configuración de Port Forwarding en VirtualBox
+![config_forwarding](./img/config_f.png)
 
 ---
 
@@ -207,7 +207,7 @@ Obteniendo como resultado:
 ```text
 HTTP/1.1 200 OK
 ```
-*****imagen: Resultado del comando curl
+![curl](./img/resultado-curl.png)
 
 ---
 
@@ -235,8 +235,7 @@ Para validar el funcionamiento del sistema, se utilizó el tracker:
 El cual fue visualizado correctamente en la interfaz de Trackdirect.
 
 Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, confirmando la correcta recepción y procesamiento de datos.
-
-****Mapa mostrando TI0TEC1-7
+![mapa1](./img/mapa1.png)
 
 ---
 
@@ -244,18 +243,7 @@ Se aplicó un filtro dentro del mapa para mostrar únicamente esta estación, co
 
 El flujo completo del sistema se resume de la siguiente manera:
 
-```text
-[ Tracker APRS (TI0TEC1-7) ]
-            ↓
-     [ Red APRS (Internet) ]
-            ↓
-         [ APRSC ]
-            ↓
-       [ Collector ]
-            ↓
-       [ PostgreSQL ]
-            ↓
-      [ Trackdirect Web ]
-            ↓
-        [ Navegador ]
-```
+
+![diag68](./img/Dig68.png)
+
+---
