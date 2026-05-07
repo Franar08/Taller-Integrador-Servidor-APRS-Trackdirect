@@ -965,11 +965,20 @@ a:hover {
   color: var(--tec-blue);
 }
 
-/* Logo TEC - estilos */
+/* MODIFICACIÓN GRUPO 8 - Mejora de visibilidad del logo
+   Componente: Logo TEC
+   Cambio: Agregar fondo blanco para visibilidad sobre navbar azul
+   Razón: Logo invisible sobre fondo oscuro, necesita contraste
+   Impacto: Visual, mejora UX
+*/
 img[alt="TEC - Tecnológico de Costa Rica"] {
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
   transition: transform 0.3s ease;
 }
 
 img[alt="TEC - Tecnológico de Costa Rica"]:hover {
   transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
