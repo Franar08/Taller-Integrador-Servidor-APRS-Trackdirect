@@ -1,7 +1,7 @@
 <?php require "../includes/bootstrap.php"; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <title><?php echo getWebsiteConfig('title'); ?></title>
@@ -201,92 +201,97 @@
                         );
                     }
                     return false;"
-                title="Go to my current position">
+                title="Ir a mi posición actual">
                 <img src="images/mylocation.png" width="25px" height="25px" style="width: 25px; padding: 0px;">
             </a>
 
             <div class="dropdown">
-                <button class="dropbtn">Tail length
+                <button class="dropbtn">Duración del historial
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="tdTopnavTimelength">
+                    <!-- MODIFICACIÓN GRUPO 8 - Traducción
+                         Tipo: Internacionalización
+                         Cambio: Traducir opciones de tiempo al español
+                         Razón: Interfaz en español para usuarios locales
+                    -->
                     <?php if (isSourceIdUsed(5)) : ?>
-                    <a href="javascript:void(0);" id="tdTopnavTimelengthDefault" onclick="trackdirect.setTimeLength(10); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">10 minutes</a>
+                    <a href="javascript:void(0);" id="tdTopnavTimelengthDefault" onclick="trackdirect.setTimeLength(10); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">10 minutos</a>
                     <? else : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(10); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">10 minutes</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(10); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">10 minutos</a>
                     <?php endif; ?>
 
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(30); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">30 minutes</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(30); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">30 minutos</a>
 
                     <?php if (isSourceIdUsed(5)) : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(60); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">1 hour</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(60); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">1 hora</a>
                     <?php else : ?>
-                    <a href="javascript:void(0);" id="tdTopnavTimelengthDefault" onclick="trackdirect.setTimeLength(60); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">1 hour</a>
+                    <a href="javascript:void(0);" id="tdTopnavTimelengthDefault" onclick="trackdirect.setTimeLength(60); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">1 hora</a>
                     <?php endif; ?>
 
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(180); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">3 hours</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(360); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">6 hours</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(720); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">12 hours</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(1080); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">18 hours</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(1440); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">24 hours</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(180); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">3 horas</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(360); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">6 horas</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(720); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">12 horas</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(1080); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">18 horas</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setTimeLength(1440); $('#tdTopnavTimelength>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-only-filtering dropdown-content-checkbox-hidden">24 horas</a>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Map API
+                <button class="dropbtn">API del Mapa
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <?php if (getWebsiteConfig('google_key') != null) : ?>
-                        <a href="/?mapapi=google" title="Switch to Google Maps" <?= ($mapapi=="google"?"class='dropdown-content-checkbox dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >Google Maps API</a>
+                        <a href="/?mapapi=google" title="Cambiar a Google Maps" <?= ($mapapi=="google"?"class='dropdown-content-checkbox dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >API de Google Maps</a>
                     <?php endif; ?>
-                    <a href="/?mapapi=leaflet" title="Switch to Leaflet with raster tiles" <?= ($mapapi=="leaflet"?"class='dropdown-content-checkbox  dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >Leaflet - Raster Tiles</a>
+                    <a href="/?mapapi=leaflet" title="Cambiar a Leaflet con mosaicos rasterizados" <?= ($mapapi=="leaflet"?"class='dropdown-content-checkbox  dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >Leaflet - Mosaicos Rasterizados</a>
                     <?php if (getWebsiteConfig('maptiler_key') != null) : ?>
-                        <a href="/?mapapi=leaflet-vector" title="Switch to Leaflet with vector tiles" <?= ($mapapi=="leaflet-vector"?"class='dropdown-content-checkbox dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >Leaflet - Vector Tiles</a>
+                        <a href="/?mapapi=leaflet-vector" title="Cambiar a Leaflet con mosaicos vectoriales" <?= ($mapapi=="leaflet-vector"?"class='dropdown-content-checkbox dropdown-content-checkbox-active'":"class='dropdown-content-checkbox'") ?> >Leaflet - Mosaicos Vectoriales</a>
                     <?php endif; ?>
                 </div>
             </div>
 
             <?php if ($mapapi != 'leaflet-vector') : ?>
             <div class="dropdown">
-                <button class="dropbtn">Map Type
+                <button class="dropbtn">Tipo de Mapa
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="tdTopnavMapType">
-                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('roadmap'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-active">Roadmap</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('terrain'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">Terrain/Outdoors</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('roadmap'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox dropdown-content-checkbox-active">Mapa de Carreteras</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('terrain'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">Terreno/Exterior</a>
                     <?php if ($mapapi == 'google' || getWebsiteConfig('leaflet_raster_tile_satellite') != null) : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('satellite'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">Satellite</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.setMapType('satellite'); $('#tdTopnavMapType>a').removeClass('dropdown-content-checkbox-active'); $(this).addClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox">Satélite</a>
                     <?php endif; ?>
                 </div>
             </div>
             <?php endif; ?>
 
             <div class="dropdown">
-                <button class="dropbtn">Settings
+                <button class="dropbtn">Configuración
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="tdTopnavSettings">
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleImperialUnits(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox <?php echo (isImperialUnitUser()?'dropdown-content-checkbox-active':''); ?>" title="Switch to imperial units">Use imperial units</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleStationaryPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Hide stations that is not moving">Hide not moving stations</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleImperialUnits(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox <?php echo (isImperialUnitUser()?'dropdown-content-checkbox-active':''); ?>" title="Cambiar a unidades imperiales">Usar unidades imperiales</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleStationaryPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Ocultar estaciones que no se mueven">Ocultar estaciones sin movimiento</a>
 
                     <?php if (isSourceIdUsed(1)) : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleInternetPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Hide stations that sends packet using TCP/UDP">Hide Internet stations</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleInternetPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Ocultar estaciones que envían paquetes por TCP/UDP">Ocultar estaciones de Internet</a>
                     <?php endif; ?>
 
                     <?php if (isSourceIdUsed(2)) : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleCwopPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Hide CWOP weather stations">Hide CWOP stations</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleCwopPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Ocultar estaciones de clima CWOP">Ocultar estaciones CWOP</a>
                     <?php endif; ?>
 
                     <?php if (isSourceIdUsed(5)) : ?>
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleOgflymPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Hide model airplanes (OGFLYM)">Hide model airplanes (OGFLYM)</a>
-                    <a href="javascript:void(0);" onclick="trackdirect.toggleUnknownPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Hide unknown aircrafts">Hide unknown aircrafts</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleOgflymPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Ocultar aviones modelo (OGFLYM)">Ocultar aviones modelo (OGFLYM)</a>
+                    <a href="javascript:void(0);" onclick="trackdirect.toggleUnknownPositions(); $(this).toggleClass('dropdown-content-checkbox-active');" class="dropdown-content-checkbox" title="Ocultar aeronaves desconocidas">Ocultar aeronaves desconocidas</a>
                     <?php endif; ?>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Other
+                <button class="dropbtn">Otros
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -294,39 +299,39 @@
                     <a href="/views/search.php"
                         class="tdlink"
                         onclick="$(this).attr('href', '/views/search.php?imperialUnits=' + (trackdirect.isImperialUnits()?'1':'0'))"
-                        title="Search for a station/vehicle here!">
-                        Station search
+                        title="¡Buscar una estación/vehículo aquí!">
+                        Búsqueda de estaciones
                     </a>
 
                     <a href="/views/latest.php"
                         class="tdlink"
                         onclick="$(this).attr('href', '/views/latest.php?imperialUnits=' + (trackdirect.isImperialUnits()?'1':'0'))"
-                        title="List latest heard stations!">
-                        Latest heard
+                        title="¡Listar las estaciones escuchadas recientemente!">
+                        Escuchadas recientemente
                     </a>
 
                     <?php if (isAllowedToShowOlderData()) : ?>
                     <a href="javascript:void(0);"
                         onclick="$('#modal-timetravel').show();"
-                        title="Select date and time to show what the map looked like then">
-                        Travel in time
+                        title="Seleccionar fecha y hora para mostrar cómo se veía el mapa en ese momento">
+                        Viajar en el tiempo
                     </a>
                     <?php endif; ?>
 
 
                     <?php if (isSourceIdUsed(1)) : ?>
-                    <a class="triple-notselected" href="#" onclick="trackdirect.togglePHGCircles(); return false;" title="Show PHG cirlces, first click will show half PGH circles and second click will show full PHG circles.">
-                        Toggle PHG circles
+                    <a class="triple-notselected" href="#" onclick="trackdirect.togglePHGCircles(); return false;" title="Mostrar círculos PHG, el primer clic mostrará círculos PHG medios y el segundo clic mostrará círculos PHG completos.">
+                        Alternar círculos PHG
                     </a>
                     <?php endif; ?>
 
-                    <a href="/views/about.php" class="tdlink" title="More about this website">
-                        About
+                    <a href="/views/about.php" class="tdlink" title="Más información sobre este sitio web">
+                        Acerca de
                     </a>
                 </div>
             </div>
 
-            <input type="text" id="station-search" placeholder="Search..">
+            <input type="text" id="station-search" placeholder="Buscar..">
 
             <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">&#9776;</a>
         </div>
@@ -336,12 +341,12 @@
         <div id="right-container">
             <div id="right-container-filtered">
                 <span id="right-container-filtered-content"></span>
-                <a href="#" onclick="trackdirect.filterOnStationId([]); return false;">reset</a>
+                <a href="#" onclick="trackdirect.filterOnStationId([]); return false;">reiniciar</a>
             </div>
 
             <div id="right-container-timetravel">
                 <span id="right-container-timetravel-content"></span>
-                <a href="#" onclick="trackdirect.setTimeTravelTimestamp(0); $('#right-container-timetravel').hide(); return false;">reset</a>
+                <a href="#" onclick="trackdirect.setTimeTravelTimestamp(0); $('#right-container-timetravel').hide(); return false;">reiniciar</a>
             </div>
         </div>
 
@@ -370,23 +375,23 @@
             <div class="modal-content">
                 <div class="modal-content-header">
                     <span class="modal-close" onclick="$('#modal-timetravel').hide();">&times;</span>
-                    <span class="modal-title">Travel in time</h2>
+                    <span class="modal-title">Viajar en el tiempo</h2>
                 </div>
                 <div class="modal-content-body" style="margin: 0px 20px 20px 20px;">
                     <?php if (!isAllowedToShowOlderData()) : ?>
                         <div style="text-align: center;">
                             <p style="max-width: 800px; display: inline-block; color: red;">
-                                The time travel feature that allows you to see the map as it looked like an earlier date is disabled on this website.
+                                La función de viaje en el tiempo que le permite ver el mapa tal como se veía en una fecha anterior está deshabilitada en este sitio web.
                             </p>
                         </div>
                     <?php else : ?>
-                        <p>Select date and time to show map data for (enter time for your locale time zone). The regular time length select box can still be used to select how old data that should be shown (relative to selected date and time).</p>
-                        <p>*Note that the heatmap will still based on data from the latest hour (not the selected date and time).</p>
-                        <p>Date and time:</p>
+                        <p>Seleccione la fecha y hora para mostrar datos del mapa (ingrese la hora en su zona horaria local). El cuadro de selección de duración de tiempo regular aún se puede usar para seleccionar qué datos antiguos deben mostrarse (en relación con la fecha y hora seleccionadas).</p>
+                        <p>*Tenga en cuenta que el mapa de calor seguirá siendo de la hora más reciente (no de la fecha y hora seleccionadas).</p>
+                        <p>Fecha y hora:</p>
 
                         <form id="timetravel-form">
                             <select id="timetravel-date" class="timetravel-select form-control"
-                                <option value="0" selected>Select date</option>
+                                <option value="0" selected>Seleccionar fecha</option>
                                 <?php for($i=0; $i <= 10; $i++) : ?>
                                     <?php $date = date('Y-m-d', strtotime("-$i days")); ?>
                                     <option value="<?php echo $date; ?>"><?php echo $date; ?></option>
@@ -394,7 +399,7 @@
                             </select>
 
                             <select id="timetravel-time" class="timetravel-select form-control">
-                                <option value="0" selected>Select time</option>
+                                <option value="0" selected>Seleccionar hora</option>
                                 <option value="00:00">00:00</option>
                                 <option value="01:00">01:00</option>
                                 <option value="02:00">02:00</option>
@@ -421,13 +426,13 @@
                                 <option value="23:00">23:00</option>
                             </select>
                             <input type="submit"
-                                value="Ok"
+                                value="Aceptar"
                                 onclick="
                                     if ($('#timetravel-date').val() != '0' && $('#timetravel-time').val() != '0') {
                                         trackdirect.setTimeLength(60, false);
                                         var ts = moment($('#timetravel-date').val() + ' ' + $('#timetravel-time').val(), 'YYYY-MM-DD HH:mm').unix();
                                         trackdirect.setTimeTravelTimestamp(ts);
-                                        $('#right-container-timetravel-content').html('Time travel to ' + $('#timetravel-date').val() + ' ' + $('#timetravel-time').val());
+                                        $('#right-container-timetravel-content').html('Viaje temporal a ' + $('#timetravel-date').val() + ' ' + $('#timetravel-time').val());
                                         $('#right-container-timetravel').show();
                                     } else {
                                         trackdirect.setTimeTravelTimestamp(0, true);
@@ -446,7 +451,7 @@
                 <span id="status-container"></span>
             </div>
             <div style="width: 350px;">
-                <span id="maintainer-container">Maintained by <a href="mailto:<?php echo getWebsiteConfig('owner_email'); ?>"><?php echo getWebsiteConfig('owner_name'); ?></a>, based on <a target="_blank" href="https://www.aprsdirect.com">APRS Track Direct</a></span>
+                <span id="maintainer-container">Mantenido por <a href="mailto:<?php echo getWebsiteConfig('owner_email'); ?>"><?php echo getWebsiteConfig('owner_name'); ?></a>, basado en <a target="_blank" href="https://www.aprsdirect.com">APRS Track Direct</a></span>
             </div>
             <div style="margin-right:10px; width: 350px; text-align:right;">
                 <span id="coordinate-container"></span>
