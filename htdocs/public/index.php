@@ -171,6 +171,16 @@
     </head>
     <body>
         <div class="topnav" id="tdTopnav">
+            <!-- MODIFICACIÓN GRUPO 8 - Personalización
+                 Componente: Logo TEC en navbar
+                 Tipo: Branding
+                 Cambio: Agregar logo del Tecnológico de Costa Rica
+                 Razón: Identificación institucional del servidor APRS
+                 Impacto: Visual, no funcional
+            -->
+            <a href="/" style="padding: 5px 10px; display: flex; align-items: center;">
+                <img src="img/TEC.png" alt="TEC - Tecnológico de Costa Rica" style="height: 40px; margin-right: 10px;">
+            </a>
             <a  style="color: white; padding: 7px 10px 8px 10px;"
                 href=""
                 onclick="
