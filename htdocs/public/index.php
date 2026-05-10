@@ -451,7 +451,7 @@
                 <span id="status-container"></span>
             </div>
             <div style="width: 350px;">
-                <span id="maintainer-container">Mantenido por <a href="mailto:<?php echo getWebsiteConfig('owner_email'); ?>"><?php echo getWebsiteConfig('owner_name'); ?></a>, basado en <a target="_blank" href="https://www.aprsdirect.com">APRS Track Direct</a></span>
+                <span id="maintainer-container">Mantenido por <strong>Grupo 8 - Taller Integrador</strong>, basado en <a target="_blank" href="https://www.aprsdirect.com">APRS Track Direct</a></span>
             </div>
             <div style="margin-right:10px; width: 350px; text-align:right;">
                 <span id="coordinate-container"></span>
