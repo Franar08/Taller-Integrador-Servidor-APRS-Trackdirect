@@ -926,6 +926,21 @@ input[type=submit]:hover {
   color: var(--tec-white);
 }
 
+/* MODIFICACIÓN GRUPO 8 - Corrección de visibilidad en dropdown
+   Componente: dropdown-content
+   Problema: Texto heredaba color blanco del navbar sobre fondo claro
+   Cambio: Forzar color oscuro en opciones del dropdown
+   Razón: Contraste insuficiente causaba texto invisible
+   Impacto: Visual, mejora legibilidad
+*/
+.dropdown-content a {
+  color: #1a1a1a !important;
+}
+
+.dropdown-content-checkbox {
+  color: #1a1a1a !important;
+}
+
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: var(--tec-red);
   color: var(--tec-white);
