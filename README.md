@@ -262,3 +262,9 @@ sudo journalctl --vacuum-size=200M
 sudo docker system prune -f
 ```
 
+![EvidenciaLimpieza](./img/EvidenciaLimpieza.png)
+
+La reducción resultó positiva ya que se liberó cerca de 1.037GB.
+
+![Dashboard Liberando espacio](./img/Dashboard Liberando espacio.png)
+
