@@ -1,7 +1,7 @@
 # Servidor APRS — Manual de Despliegue Paso a Paso
 
 > Manual técnico para recrear el servidor APRS (aprsc + Trackdirect) desde un Ubuntu Server limpio.  
-> Curso: Taller Integrador | Grupos 8-10
+> Curso: Taller Integrador | Grupo 8
 
 ---
 
