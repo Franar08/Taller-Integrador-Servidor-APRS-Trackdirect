@@ -247,3 +247,18 @@ El flujo completo del sistema se resume de la siguiente manera:
 ![diag68](./img/Dig68.png)
 
 ---
+
+## Monitoreo
+
+Durante la realización del Monitoreo se detectó una alta ocupación del Disco Duro, estando esta métrica por encima al 85% de su capacidad. 
+
+![Dashboard1](./img/Dashboard1.png)
+
+De esta forma, se decidió realizar una limpieza de imágenes y contenedores Docker que no están en uso. Esta limpieza se realizó en la terminal utilizando los comandos: 
+
+```bash
+sudo apt autoremove -y && sudo apt clean
+sudo journalctl --vacuum-size=200M
+sudo docker system prune -f
+```
+
