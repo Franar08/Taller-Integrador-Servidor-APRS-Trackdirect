@@ -247,48 +247,6 @@ El flujo completo del sistema se resume de la siguiente manera:
 ![diag68](./img/Dig68.png)
 
 ---
-## Semanas 10-12: Personalización del Código e Integración Real
-
-### Objetivos
-- Apropiarse del software Trackdirect
-- Conectar con los demás grupos en tiempo real
-
-### Tareas Implementadas
-
-#### 1. Modificación del Código Fuente (HTML/CSS)
-Se modificó el código fuente de Trackdirect para incluir logos del curso, adaptar la interfaz a español y aplicar funcionalidades visuales.
-
-**Archivos modificados:**
-- `htdocs/public/index.php` - Agregado logo TEC en navbar, traducción de interfaz completa al español
-- `htdocs/public/css/main.css` - Aplicación de paleta de colores TEC (azul #1a3a52, rojo #d4184b)
-
-#### 2. Documentación en Código
-Cada bloque modificado en Trackdirect incluye comentarios explicativos indicando qué hace el cambio y por qué fue implementado.
-
-**Formato de comentario utilizado:**
-```html
-<!-- MODIFICACIÓN GRUPO 8 - [Descripción]
-     Componente: [nombre del componente]
-     Tipo: [Branding|Traducción|UX|Feature]
-     Cambio: [descripción concisa del cambio]
-     Razón: [justificación de la modificación]
-     Impacto: [Visual|Funcional|Datos]
--->
-```
-
-**Ejemplos de cambios documentados:**
-- Logo TEC en navbar superior izquierda (`index.php`, línea 172)
-- Traducción de menús e interfaces al español (`index.php`, múltiples líneas)
-- Colorización institucional del navbar y elementos interactivos (`main.css`, secciones finales)
-
-#### 3. Integración Real con Otros Grupos
-El servidor está conectado a la red APRS-IS global (rotate.aprs.net) permitiendo visualizar estaciones de otros grupos en tiempo real en el mapa.
-
-**Configuración:**
-- APRSC ServerId: TI3AFK
-- Uplink: rotate.aprs.net:10152
-- Passcode: 21153 (verificado)
-- Resultado: Estaciones de Grupos 1, 2 y otros visibles en el mapa
 
 ## Semanas 10-12: Personalización del Código e Integración Real
 
