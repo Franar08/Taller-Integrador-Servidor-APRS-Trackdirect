@@ -314,7 +314,7 @@ La reducción resultó positiva ya que se liberó cerca de 1.037GB.
 
 ![DashboardLiberandoEspacio](./img/DashboardLiberandoEspacio.png)
 
-Finalmente, se crearon monitores en la herramienta de WEbmin para complementar de manera eficiente el monitoreo del funcionamiento del servidor. 
+Finalmente, se crearon monitores en la herramienta de Webmin para complementar de manera eficiente el monitoreo del funcionamiento del servidor. 
 
 ![Monitores](./img/Monitores.png)
 
